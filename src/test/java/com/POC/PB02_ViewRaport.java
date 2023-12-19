@@ -42,18 +42,20 @@ public class PB02_ViewRaport extends BaseClass {
 			appObjects.username.sendKeys(Email);
 			appObjects.password1.clear();
 			appObjects.password1.sendKeys(Password);
-			appObjects.clickOnElement(appObjects.loginbtn);
-			appObjects.clickOnElement(appObjects.transactionhistory);
-			appObjects.navigateBack();
-			appObjects.clickOnElement(appObjects.raports);		
-			appObjects.clickOnElement(appObjects.alltransactionbyamount);
+			bm.clickOnElement(appObjects.loginbtn);
+			bm.clickOnElement(appObjects.transactionhistory);
+			bm.navigateBack();
+			bm.clickOnElement(appObjects.raports);		
+			bm.clickOnElement(appObjects.alltransactionbyamount);
 			appObjects.raportamount.sendKeys(Amount1);
-			appObjects.clickOnElement(appObjects.viewreport);			
-			softAssert.assertTrue(appObjects.verifyReportAmount().contains(Amount1), "Amount not matched");
+			bm.clickOnElement(appObjects.viewreport);			
+		//	softAssert.assertTrue(bm.verifyReportAmount().contains(Amount1), "Amount not matched");
+			bm.validateIfCorrectText(appObjects.reportamount, Amount1);
+			
 			Reporter.log("Amount Not Matched",true);		
-			appObjects.navigateBack();
-			appObjects.navigateBack();
-			appObjects.navigateBack();
+			bm.navigateBack();
+			bm.navigateBack();
+			bm.navigateBack();
 			Reporter.log("Test case 2 : Finished",true);
 			Reporter.log("    ",true);
 			

@@ -56,42 +56,5 @@ public class Utils {
 					"new UiScrollable(new UiSelector()).scrollIntoView(text(\""+text+"\"))"));
 		
 		}		
-		
-
-
-public String getScreenshot() {
-	String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-	TakesScreenshot ts = (TakesScreenshot) driver;
-	File source = ts.getScreenshotAs(OutputType.FILE);
-    //String for saving the screenshot to desired path
-	String destination = System.getProperty("user.dir") + "\\ExtentReport\\FailedTestsScreenshots\\Error - "+dateName+".png";
-	//String for the output for extent report
-	String screenshotLoc = "../FailedTestsScreenshots/Error - "+dateName+".png";
-	File finalDestination = new File(destination);
-	try {
-		FileUtils.copyFile(source, finalDestination);
-	} catch (IOException e) {
-		e.printStackTrace();
-	}
-	return screenshotLoc;
-}	 
-
-
-//For Passed Steps, get screenshot
-public String passedGetScreenshot() {
-	String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-	TakesScreenshot ts = (TakesScreenshot) driver;
-	File source = ts.getScreenshotAs(OutputType.FILE);
-    //String for saving the screenshot to desired path
-	String destination = System.getProperty("user.dir") + "\\ExtentReport\\PassedTestsScreenshots\\Passed - "+dateName+".png";
-	//String for the output for extent report
-	String screenshotLoc = "../PassedTestsScreenshots/Passed - "+dateName+".png";
-	File finalDestination = new File(destination);
-	try {
-		FileUtils.copyFile(source, finalDestination);
-	} catch (IOException e) {
-		e.printStackTrace();
-	}
-	return screenshotLoc;
-}
+	
 }

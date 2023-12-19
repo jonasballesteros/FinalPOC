@@ -50,35 +50,35 @@ public class PB01_NewAccount extends BaseClass {
 		String Amount2=prop.getProperty("Amount2");
 		
 		        
-						
-			
-			appObjects.clickOnElement(appObjects.registermain);
+			bm.clickOnElement(appObjects.registermain);
 			appObjects.firstname.sendKeys(FirstName);
 			appObjects.lastname.sendKeys(LastName);
 			appObjects.email.sendKeys(Email);
 			appObjects.iban.sendKeys(Iban);
 			appObjects.password.sendKeys(Password);
 			appObjects.confirmpassword.sendKeys(Password);
-			appObjects.clickOnElement(appObjects.male);
-			appObjects.clickOnElement(appObjects.registerbtn1);
+			bm.clickOnElement(appObjects.male);
+			bm.clickOnElement(appObjects.registerbtn1);
 			Reporter.log("Account Created",true);
 			appObjects.username.sendKeys(Email);
 			appObjects.password1.sendKeys(Password);
-			appObjects.clickOnElement(appObjects.loginbtn);		
-			appObjects.clickOnElement(appObjects.transactionhistory);	
-			appObjects.clickOnElement(appObjects.addbtn);
+			bm.clickOnElement(appObjects.loginbtn);		
+			bm.clickOnElement(appObjects.transactionhistory);	
+			bm.clickOnElement(appObjects.addbtn);
 			appObjects.beneficiaryname.sendKeys(BeneficiaryName1);
 			appObjects.accountnumber.sendKeys(AccountNumber1);
 			appObjects.amount.sendKeys(Amount1);
-			appObjects.clickOnElement(appObjects.sendmoneybtn);	
-			appObjects.clickOnElement(appObjects.addbtn);
+			bm.clickOnElement(appObjects.sendmoneybtn);	
+			bm.clickOnElement(appObjects.addbtn);
 			appObjects.beneficiaryname.sendKeys(BeneficiaryName2);
 			appObjects.accountnumber.sendKeys(AccountNumber2);
 			appObjects.amount.sendKeys(Amount2);
-			appObjects.clickOnElement(appObjects.sendmoneybtn);
+			bm.clickOnElement(appObjects.sendmoneybtn);
+			bm.validateIfCorrectText(appObjects.beneficiaryamount1, Amount1);
+			bm.validateIfCorrectText(appObjects.beneficiaryamount2, Amount2);
 			Reporter.log("Beneficiary Account Created",true);			
-			appObjects.navigateBack();
-			appObjects.navigateBack();
+			bm.navigateBack();
+			bm.navigateBack();
 			
 			Reporter.log("Test case 1 : Finished",true);
 			Reporter.log("    ",true);

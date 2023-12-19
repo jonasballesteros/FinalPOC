@@ -52,7 +52,7 @@ public AndroidDriver driver;
 		}
 		return screenshotLoc;
 	}
-
+	//For Failed Steps, get screenshot
 	public String failedGetScreenshot() {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
@@ -140,10 +140,30 @@ public AndroidDriver driver;
 			ExtentReportUtil.logger.log(LogStatus.FAIL, ExtentReportUtil.logger.addScreenCapture(failedGetScreenshot()));
 			return reportamount.getText();
 			
+		}
+		
+		
+		public void validateIfCorrectText(WebElement ele, String expectedValue) {
+			String actualValue = null;
 			
-			
+			try {
+				actualValue = ele.getText();
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			if (actualValue.contentEquals(expectedValue)) {
+				ExtentReportUtil.pass("Text matched");
+				ExtentReportUtil.logger.log(LogStatus.PASS, ExtentReportUtil.logger.addScreenCapture(passedGetScreenshot()));
 				
 				
+			}
+			
+			else {
+				ExtentReportUtil.fail("Text not matched");
+				ExtentReportUtil.logger.log(LogStatus.FAIL, ExtentReportUtil.logger.addScreenCapture(failedGetScreenshot()));
+			}
+						
 				
 			}
 

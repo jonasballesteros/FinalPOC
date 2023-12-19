@@ -40,14 +40,14 @@ public class PB04_DeleteAccount extends BaseClass {
 			appObjects.username.sendKeys(Email);
 			appObjects.password1.clear();
 			appObjects.password1.sendKeys(Password);
-			appObjects.clickOnElement(appObjects.loginbtn);
-			appObjects.clickOnElement(appObjects.deleteaccount);
-			appObjects.getAccountErased();
+			bm.clickOnElement(appObjects.loginbtn);
+			bm.clickOnElement(appObjects.deleteaccount);
+			bm.getAccountErased();
 			Reporter.log("Account Erased",true);			
 			appObjects.username.sendKeys(Email);
 			appObjects.password1.sendKeys(Password);
-			appObjects.clickOnElement(appObjects.loginbtn);
-			appObjects.getInvalidUsername();
+			bm.clickOnElement(appObjects.loginbtn);
+			bm.getInvalidUsername();
 			Reporter.log("Invalid username or password",true);
 					
 			
