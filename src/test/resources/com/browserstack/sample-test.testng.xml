@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PocketBank">
+    <test name="PB01">
+        <classes>
+            <class name="com.POC.PB01_NewAccount">
+				<methods>
+					<include name="PB_01_NewAccount"/>
+				</methods>
+			</class>
+            <class name="com.POC.PB02_ViewRaport">
+            <methods>
+					<include name="PB_02_ViewRaport"/>
+				</methods>
+				</class>
+            <class name="com.POC.PB04_DeleteAccount">
+				<methods>
+					<include name="PB_04_DeleteAccount"/>
+				</methods>
+				</class>
+      
+            
+        </classes>
+    </test>
+</suite>

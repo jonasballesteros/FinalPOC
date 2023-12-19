@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-PocketBank" class="navigator-link">
+              <span class="suite-name border-passed">PocketBank</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-PocketBank" class="navigator-link ">
+                    <span>C:\Users\COLLABERA.DIGITAL\eclipse-workspace\POC-PocketBank\src\test\resources\com\browserstack\sample-test.testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-PocketBank" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-PocketBank" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-PocketBank" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-PocketBank" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-PocketBank" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-PocketBank" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-PocketBank" class="hide-methods passed suite-PocketBank"> (hide)</a> <!-- hide-methods passed suite-PocketBank -->
+                      <a href="#" panel-name="suite-PocketBank" class="show-methods passed suite-PocketBank"> (show)</a> <!-- show-methods passed suite-PocketBank -->
+                    </span>
+                    <div class="method-list-content passed suite-PocketBank">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PocketBank" title="com.POC.PB01_NewAccount" class="method navigator-link" hash-for-method="PB_01_NewAccount">PB_01_NewAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PocketBank" title="com.POC.PB02_ViewRaport" class="method navigator-link" hash-for-method="PB_02_ViewRaport">PB_02_ViewRaport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PocketBank" title="com.POC.PB04_DeleteAccount" class="method navigator-link" hash-for-method="PB_04_DeleteAccount">PB_04_DeleteAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-PocketBank -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-PocketBank" class="panel PocketBank">
+          <div class="suite-PocketBank-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POC.PB02_ViewRaport</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PB_02_ViewRaport">
+                  </a> <!-- PB_02_ViewRaport -->
+                  <span class="method-name">PB_02_ViewRaport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PocketBank-class-passed -->
+          <div class="suite-PocketBank-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POC.PB01_NewAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PB_01_NewAccount">
+                  </a> <!-- PB_01_NewAccount -->
+                  <span class="method-name">PB_01_NewAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PocketBank-class-passed -->
+          <div class="suite-PocketBank-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.POC.PB04_DeleteAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PB_04_DeleteAccount">
+                  </a> <!-- PB_04_DeleteAccount -->
+                  <span class="method-name">PB_04_DeleteAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PocketBank-class-passed -->
+        </div> <!-- panel PocketBank -->
+        <div panel-name="test-xml-PocketBank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\COLLABERA.DIGITAL\eclipse-workspace\POC-PocketBank\src\test\resources\com\browserstack\sample-test.testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;PocketBank&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PB01&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.POC.PB01_NewAccount&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;PB_01_NewAccount&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.POC.PB01_NewAccount --&gt;
+      &lt;class name=&quot;com.POC.PB02_ViewRaport&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;PB_02_ViewRaport&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.POC.PB02_ViewRaport --&gt;
+      &lt;class name=&quot;com.POC.PB04_DeleteAccount&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;PB_04_DeleteAccount&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.POC.PB04_DeleteAccount --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PB01 --&gt;
+&lt;/suite&gt; &lt;!-- PocketBank --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-PocketBank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for PocketBank</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">PB01 (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-PocketBank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for PocketBank</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-PocketBank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for PocketBank</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_PocketBank');
+function tableData_PocketBank() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'PB_01_NewAccount')
+data.setCell(0, 2, 'com.POC.PB01_NewAccount')
+data.setCell(0, 3, 36980);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'PB_02_ViewRaport')
+data.setCell(1, 2, 'com.POC.PB02_ViewRaport')
+data.setCell(1, 3, 19216);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'PB_04_DeleteAccount')
+data.setCell(2, 2, 'com.POC.PB04_DeleteAccount')
+data.setCell(2, 3, 13670);
+window.suiteTableData['PocketBank']= { tableData: data, tableDiv: 'times-div-PocketBank'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-PocketBank">
+              </div> <!-- times-div-PocketBank -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-PocketBank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for PocketBank</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PB_02_ViewRaport</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">    </span>
+                <span class="reporter-method-output">Test case 2 : Start</span>
+                <span class="reporter-method-output">Amount Not Matched</span>
+                <span class="reporter-method-output">Test case 2 : Finished</span>
+                <span class="reporter-method-output">    </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PB_01_NewAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">    </span>
+                <span class="reporter-method-output">Test case 1 : Start</span>
+                <span class="reporter-method-output">Account Created</span>
+                <span class="reporter-method-output">Beneficiary Account Created</span>
+                <span class="reporter-method-output">Test case 1 : Finished</span>
+                <span class="reporter-method-output">    </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PB_04_DeleteAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">    </span>
+                <span class="reporter-method-output">Test case 4 Start</span>
+                <span class="reporter-method-output">Account Erased</span>
+                <span class="reporter-method-output">Invalid username or password</span>
+                <span class="reporter-method-output">Test case 4 : Finished</span>
+                <span class="reporter-method-output">    </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-PocketBank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">8 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POC.PB02_ViewRaport</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.POC.PB04_DeleteAccount</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">endTest</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-PocketBank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POC.PB01_NewAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">99 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">PB_01_NewAccount</span>
+                <span class="method-start">22946 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=PB_01_NewAccount status=SUCCESS method=PB01_NewAccount.PB_01_NewAccount()[pri:0, in...)</span>
+                <span class="method-start">59928 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POC.PB02_ViewRaport</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">PB_02_ViewRaport</span>
+                <span class="method-start">59931 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=PB_02_ViewRaport status=SUCCESS method=PB02_ViewRaport.PB_02_ViewRaport()[pri:0, in...)</span>
+                <span class="method-start">79148 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POC.PB04_DeleteAccount</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">PB_04_DeleteAccount</span>
+                <span class="method-start">79148 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=PB_04_DeleteAccount status=SUCCESS method=PB04_DeleteAccount.PB_04_DeleteAccount()[...)</span>
+                <span class="method-start">92818 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.POC.PB01_NewAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">92819 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">94165 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

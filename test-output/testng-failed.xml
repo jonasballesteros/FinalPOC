@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PocketBank]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PB01(failed)">
+    <classes>
+      <class name="com.POC.PB02_ViewRaport">
+        <methods>
+          <include name="PB_02_ViewRaport"/>
+          <include name="tearDown"/>
+          <include name="setupReport"/>
+          <include name="endTest"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.POC.PB02_ViewRaport -->
+      <class name="com.POC.PB01_NewAccount">
+        <methods>
+          <include name="PB_01_NewAccount"/>
+          <include name="tearDown"/>
+          <include name="setupReport"/>
+          <include name="endTest"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.POC.PB01_NewAccount -->
+      <class name="com.POC.PB04_DeleteAccount">
+        <methods>
+          <include name="tearDown"/>
+          <include name="PB_04_DeleteAccount"/>
+          <include name="setupReport"/>
+          <include name="endTest"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.POC.PB04_DeleteAccount -->
+    </classes>
+  </test> <!-- PB01(failed) -->
+</suite> <!-- Failed suite [PocketBank] -->

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="11" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[    ]]>
+    </line>
+    <line>
+      <![CDATA[Test case 1 : Start]]>
+    </line>
+    <line>
+      <![CDATA[Account Created]]>
+    </line>
+    <line>
+      <![CDATA[Beneficiary Account Created]]>
+    </line>
+    <line>
+      <![CDATA[Test case 1 : Finished]]>
+    </line>
+    <line>
+      <![CDATA[    ]]>
+    </line>
+    <line>
+      <![CDATA[    ]]>
+    </line>
+    <line>
+      <![CDATA[Test case 2 : Start]]>
+    </line>
+    <line>
+      <![CDATA[Amount Not Matched]]>
+    </line>
+    <line>
+      <![CDATA[Test case 2 : Finished]]>
+    </line>
+    <line>
+      <![CDATA[    ]]>
+    </line>
+    <line>
+      <![CDATA[    ]]>
+    </line>
+    <line>
+      <![CDATA[Test case 4 Start]]>
+    </line>
+    <line>
+      <![CDATA[Account Erased]]>
+    </line>
+    <line>
+      <![CDATA[Invalid username or password]]>
+    </line>
+    <line>
+      <![CDATA[Test case 4 : Finished]]>
+    </line>
+    <line>
+      <![CDATA[    ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-12-18T14:51:46 CST" name="PocketBank" finished-at="2023-12-18T14:53:20 CST" duration-ms="94054">
+    <groups>
+    </groups>
+    <test started-at="2023-12-18T14:51:46 CST" name="PB01" finished-at="2023-12-18T14:53:20 CST" duration-ms="94054">
+      <class name="com.POC.PB01_NewAccount">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:51:46 CST" name="setupReport" finished-at="2023-12-18T14:51:46 CST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:51:46 CST" name="setUp" finished-at="2023-12-18T14:52:09 CST" duration-ms="22834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PB_01_NewAccount()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:52:09 CST" name="PB_01_NewAccount" finished-at="2023-12-18T14:52:46 CST" duration-ms="36980" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[    ]]>
+            </line>
+            <line>
+              <![CDATA[Test case 1 : Start]]>
+            </line>
+            <line>
+              <![CDATA[Account Created]]>
+            </line>
+            <line>
+              <![CDATA[Beneficiary Account Created]]>
+            </line>
+            <line>
+              <![CDATA[Test case 1 : Finished]]>
+            </line>
+            <line>
+              <![CDATA[    ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PB_01_NewAccount -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:52:46 CST" name="afterMethod" finished-at="2023-12-18T14:52:46 CST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PB_01_NewAccount status=SUCCESS method=PB01_NewAccount.PB_01_NewAccount()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:53:19 CST" name="tearDown" finished-at="2023-12-18T14:53:20 CST" duration-ms="1332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:53:20 CST" name="endTest" finished-at="2023-12-18T14:53:20 CST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.POC.PB01_NewAccount -->
+      <class name="com.POC.PB02_ViewRaport">
+        <test-method signature="PB_02_ViewRaport()[pri:0, instance:com.POC.PB02_ViewRaport@232a7d73]" started-at="2023-12-18T14:52:46 CST" name="PB_02_ViewRaport" finished-at="2023-12-18T14:53:05 CST" duration-ms="19216" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[    ]]>
+            </line>
+            <line>
+              <![CDATA[Test case 2 : Start]]>
+            </line>
+            <line>
+              <![CDATA[Amount Not Matched]]>
+            </line>
+            <line>
+              <![CDATA[Test case 2 : Finished]]>
+            </line>
+            <line>
+              <![CDATA[    ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PB_02_ViewRaport -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB02_ViewRaport@232a7d73]" started-at="2023-12-18T14:53:05 CST" name="afterMethod" finished-at="2023-12-18T14:53:05 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PB_02_ViewRaport status=SUCCESS method=PB02_ViewRaport.PB_02_ViewRaport()[pri:0, instance:com.POC.PB02_ViewRaport@232a7d73]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.POC.PB02_ViewRaport -->
+      <class name="com.POC.PB04_DeleteAccount">
+        <test-method signature="PB_04_DeleteAccount()[pri:0, instance:com.POC.PB04_DeleteAccount@4b41e4dd]" started-at="2023-12-18T14:53:05 CST" name="PB_04_DeleteAccount" finished-at="2023-12-18T14:53:19 CST" duration-ms="13670" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[    ]]>
+            </line>
+            <line>
+              <![CDATA[Test case 4 Start]]>
+            </line>
+            <line>
+              <![CDATA[Account Erased]]>
+            </line>
+            <line>
+              <![CDATA[Invalid username or password]]>
+            </line>
+            <line>
+              <![CDATA[Test case 4 : Finished]]>
+            </line>
+            <line>
+              <![CDATA[    ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PB_04_DeleteAccount -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB04_DeleteAccount@4b41e4dd]" started-at="2023-12-18T14:53:19 CST" name="afterMethod" finished-at="2023-12-18T14:53:19 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PB_04_DeleteAccount status=SUCCESS method=PB04_DeleteAccount.PB_04_DeleteAccount()[pri:0, instance:com.POC.PB04_DeleteAccount@4b41e4dd]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.POC.PB04_DeleteAccount -->
+    </test> <!-- PB01 -->
+  </suite> <!-- PocketBank -->
+</testng-results>
