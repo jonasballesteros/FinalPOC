@@ -26,9 +26,6 @@
       <![CDATA[Test case 2 : Start]]>
     </line>
     <line>
-      <![CDATA[Amount Not Matched]]>
-    </line>
-    <line>
       <![CDATA[Test case 2 : Finished]]>
     </line>
     <line>
@@ -41,32 +38,26 @@
       <![CDATA[Test case 4 Start]]>
     </line>
     <line>
-      <![CDATA[Account Erased]]>
-    </line>
-    <line>
-      <![CDATA[Invalid username or password]]>
-    </line>
-    <line>
       <![CDATA[Test case 4 : Finished]]>
     </line>
     <line>
       <![CDATA[    ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-12-18T14:51:46 CST" name="PocketBank" finished-at="2023-12-18T14:53:20 CST" duration-ms="94054">
+  <suite started-at="2023-12-21T11:36:53 CST" name="PocketBank" finished-at="2023-12-21T11:38:37 CST" duration-ms="104150">
     <groups>
     </groups>
-    <test started-at="2023-12-18T14:51:46 CST" name="PB01" finished-at="2023-12-18T14:53:20 CST" duration-ms="94054">
+    <test started-at="2023-12-21T11:36:53 CST" name="PB01" finished-at="2023-12-21T11:38:37 CST" duration-ms="104150">
       <class name="com.POC.PB01_NewAccount">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:51:46 CST" name="setupReport" finished-at="2023-12-18T14:51:46 CST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-21T11:36:53 CST" name="setupReport" finished-at="2023-12-21T11:36:53 CST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:51:46 CST" name="setUp" finished-at="2023-12-18T14:52:09 CST" duration-ms="22834" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-21T11:36:53 CST" name="setUp" finished-at="2023-12-21T11:37:18 CST" duration-ms="25470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="PB_01_NewAccount()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:52:09 CST" name="PB_01_NewAccount" finished-at="2023-12-18T14:52:46 CST" duration-ms="36980" status="PASS">
+        <test-method signature="PB_01_NewAccount()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-21T11:37:18 CST" name="PB_01_NewAccount" finished-at="2023-12-21T11:37:59 CST" duration-ms="41045" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[    ]]>
@@ -88,7 +79,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- PB_01_NewAccount -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:52:46 CST" name="afterMethod" finished-at="2023-12-18T14:52:46 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-21T11:37:59 CST" name="afterMethod" finished-at="2023-12-21T11:37:59 CST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,26 +90,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:53:19 CST" name="tearDown" finished-at="2023-12-18T14:53:20 CST" duration-ms="1332" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-21T11:38:36 CST" name="tearDown" finished-at="2023-12-21T11:38:37 CST" duration-ms="1414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-18T14:53:20 CST" name="endTest" finished-at="2023-12-18T14:53:20 CST" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.POC.PB01_NewAccount@5b202a3a]" started-at="2023-12-21T11:38:37 CST" name="endTest" finished-at="2023-12-21T11:38:37 CST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- com.POC.PB01_NewAccount -->
       <class name="com.POC.PB02_ViewRaport">
-        <test-method signature="PB_02_ViewRaport()[pri:0, instance:com.POC.PB02_ViewRaport@232a7d73]" started-at="2023-12-18T14:52:46 CST" name="PB_02_ViewRaport" finished-at="2023-12-18T14:53:05 CST" duration-ms="19216" status="PASS">
+        <test-method signature="PB_02_ViewRaport()[pri:0, instance:com.POC.PB02_ViewRaport@232a7d73]" started-at="2023-12-21T11:37:59 CST" name="PB_02_ViewRaport" finished-at="2023-12-21T11:38:21 CST" duration-ms="21473" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[    ]]>
             </line>
             <line>
               <![CDATA[Test case 2 : Start]]>
-            </line>
-            <line>
-              <![CDATA[Amount Not Matched]]>
             </line>
             <line>
               <![CDATA[Test case 2 : Finished]]>
@@ -128,7 +116,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- PB_02_ViewRaport -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB02_ViewRaport@232a7d73]" started-at="2023-12-18T14:53:05 CST" name="afterMethod" finished-at="2023-12-18T14:53:05 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB02_ViewRaport@232a7d73]" started-at="2023-12-21T11:38:21 CST" name="afterMethod" finished-at="2023-12-21T11:38:21 CST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,19 +129,13 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- com.POC.PB02_ViewRaport -->
       <class name="com.POC.PB04_DeleteAccount">
-        <test-method signature="PB_04_DeleteAccount()[pri:0, instance:com.POC.PB04_DeleteAccount@4b41e4dd]" started-at="2023-12-18T14:53:05 CST" name="PB_04_DeleteAccount" finished-at="2023-12-18T14:53:19 CST" duration-ms="13670" status="PASS">
+        <test-method signature="PB_04_DeleteAccount()[pri:0, instance:com.POC.PB04_DeleteAccount@4b41e4dd]" started-at="2023-12-21T11:38:21 CST" name="PB_04_DeleteAccount" finished-at="2023-12-21T11:38:36 CST" duration-ms="14727" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[    ]]>
             </line>
             <line>
               <![CDATA[Test case 4 Start]]>
-            </line>
-            <line>
-              <![CDATA[Account Erased]]>
-            </line>
-            <line>
-              <![CDATA[Invalid username or password]]>
             </line>
             <line>
               <![CDATA[Test case 4 : Finished]]>
@@ -163,7 +145,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- PB_04_DeleteAccount -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB04_DeleteAccount@4b41e4dd]" started-at="2023-12-18T14:53:19 CST" name="afterMethod" finished-at="2023-12-18T14:53:19 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.POC.PB04_DeleteAccount@4b41e4dd]" started-at="2023-12-21T11:38:36 CST" name="afterMethod" finished-at="2023-12-21T11:38:36 CST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -10,6 +10,7 @@ import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -18,6 +19,7 @@ import org.testng.Assert;
 import com.Utilities.ExtentReportUtil;
 import com.relevantcodes.extentreports.LogStatus;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -127,6 +129,14 @@ public AndroidDriver driver;
 			ExtentReportUtil.pass("Invalid Username");
 			ExtentReportUtil.logger.log(LogStatus.PASS, ExtentReportUtil.logger.addScreenCapture(passedGetScreenshot()));
 			return toastElem.getText();
+			
+		}
+		
+		public String getInvalidEmail() {
+			WebElement toastElem = driver.findElement(By.xpath(".//*[contains(@text, 'Email field should not be empty and it must contain @!')]"));
+			ExtentReportUtil.pass("Invalid Email");
+			ExtentReportUtil.logger.log(LogStatus.PASS, ExtentReportUtil.logger.addScreenCapture(passedGetScreenshot()));
+			return toastElem.getText();
 		}
 		
 		public String verifyReportAmount() throws IOException {
@@ -163,8 +173,87 @@ public AndroidDriver driver;
 				ExtentReportUtil.fail("Text not matched");
 				ExtentReportUtil.logger.log(LogStatus.FAIL, ExtentReportUtil.logger.addScreenCapture(failedGetScreenshot()));
 			}
+			
+}
+		
+		
+		public void validateIfCorrectTransaction(WebElement ele, String expectedValue) {
+			String actualValue = null;
+			
+			try {
+				actualValue = ele.getText();
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			if (actualValue.contentEquals(expectedValue)) {
+				ExtentReportUtil.pass("Transaction Matched");
+				ExtentReportUtil.logger.log(LogStatus.PASS, ExtentReportUtil.logger.addScreenCapture(passedGetScreenshot()));
+				
+				
+			}
+			
+			else {
+				ExtentReportUtil.fail("Transaction Mismatched");
+				ExtentReportUtil.logger.log(LogStatus.FAIL, ExtentReportUtil.logger.addScreenCapture(failedGetScreenshot()));
+			}
 						
 				
 			}
-
-}
+		
+		public void validateToast(String value) {
+			WebElement ele = driver.findElement(AppiumBy.xpath("//*[contains(@text, '"+ value +"')]"));
+			boolean status = false;
+			try {
+				ele.getText();
+				status = true;
+			} catch (StaleElementReferenceException e) {
+				ele = driver.findElement(AppiumBy.xpath("//*[contains(@text, '"+ value +"')]"));
+				ele.getText();
+				status = true;
+			}
+			
+			if (status == true) {
+				System.out.println("\"" +value + "\" Toast Messaged Was Displayed");
+				ExtentReportUtil.pass("\"" +value + "\" Toast Messaged Was Displayed");
+				
+				ExtentReportUtil.logger.log(LogStatus.PASS, 
+						ExtentReportUtil.logger.addScreenCapture(passedGetScreenshot()));
+			}
+			else {
+				System.out.println("\"" +value + "\" Toast Messaged Was Not Displayed");
+				ExtentReportUtil.fail("\"" +value + "\" Toast Messaged Was Not Displayed");
+							
+				ExtentReportUtil.logger.log(LogStatus.FAIL, 
+						ExtentReportUtil.logger.addScreenCapture(failedGetScreenshot()));
+			}
+		}
+		
+		public void validateToastEmail(String value) {
+			WebElement ele = driver.findElement(AppiumBy.xpath("//*[contains(@text, 'Email field should not be empty and it must contain @!')]"));
+			boolean status = false;
+			try {
+				ele.getText();
+				status = true;
+			} catch (StaleElementReferenceException e) {
+				ele = driver.findElement(AppiumBy.xpath("//*[contains(@text, 'Email field should not be empty and it must contain @!')]"));
+				ele.getText();
+				status = true;
+			}
+			
+			if (status == true) {
+				System.out.println("\"" +value + "\" Toast Messaged Was Displayed");
+				ExtentReportUtil.pass("\"" +value + "\" Toast Messaged Was Displayed");
+				
+				ExtentReportUtil.logger.log(LogStatus.PASS, 
+						ExtentReportUtil.logger.addScreenCapture(passedGetScreenshot()));
+			}
+			else {
+				System.out.println("\"" +value + "\" Toast Messaged Was Not Displayed");
+				ExtentReportUtil.fail("\"" +value + "\" Toast Messaged Was Not Displayed");
+							
+				ExtentReportUtil.logger.log(LogStatus.FAIL, 
+						ExtentReportUtil.logger.addScreenCapture(failedGetScreenshot()));
+			}
+		}
+		}
