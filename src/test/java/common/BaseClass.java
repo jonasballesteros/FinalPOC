@@ -43,16 +43,16 @@ public class BaseClass {
 	public static Utils utils;
 	public static ITestResult result;
 		
-//	public static String userName = System.getenv("BROWSERSTACK_USERNAME"); 
-//	public static String accessKey = System.getenv("BROWSERSTACK_ACCESSKEY"); 
-//	public static String buildName_PocketBank = System.getenv("BROWSERSTACK_BUILD_NAME"); 
+	public static String userName = System.getenv("BROWSERSTACK_USERNAME"); 
+	public static String accessKey = System.getenv("BROWSERSTACK_ACCESSKEY"); 
+	public static String buildName_PocketBank = System.getenv("BROWSERSTACK_BUILD_NAME"); 
 	
-	public static String userName = "jonasballesteros_i5wYOf"; 
-	public static String accessKey = "gBtapnNFu3CLsyHZB8wr"; 
-	public static String buildName_PocketBank = "Jonas POC";
+//	public static String userName = "jonasballesteros_i5wYOf"; 
+//	public static String accessKey = "gBtapnNFu3CLsyHZB8wr"; 
+//	public static String buildName_PocketBank = "Jonas POC";
 	
 	
-	public static String app_PocketBank =(""); 
+
 	
     public static String URL = "http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub";
     
